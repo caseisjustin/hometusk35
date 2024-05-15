@@ -397,7 +397,7 @@ export const deleteBlog = async (req, res) => {
 
 
 // try{
-//     query("CREATE TABLE IF NOT EXISTS users(id SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(40),password VARCHAR(30), created_at VARCHAR(40))")
+//     query("CREATE TABLE IF NOT EXISTS users(id SERIAL PRIMARY KEY, name VARCHAR(30), email VARCHAR(40),password VARCHAR(70), created_at VARCHAR(40))")
 //     query("CREATE TABLE IF NOT EXISTS books(id SERIAL PRIMARY KEY, title VARCHAR(30), author VARCHAR(40), publication_date VARCHAR(40), genre VARCHAR(30), user_id INT, FOREIGN KEY(user_id) REFERENCES users(id))")
 //     query("CREATE TABLE IF NOT EXISTS comments(id SERIAL PRIMARY KEY, text VARCHAR(100), created_at VARCHAR(40), book_id INT, user_id INT, FOREIGN KEY(user_id) REFERENCES users(id), FOREIGN KEY(book_id) REFERENCES books(id))")
 //     query("CREATE TABLE IF NOT EXISTS photos(id SERIAL PRIMARY KEY, url VARCHAR(30), book_id INT, uploaded_at VARCHAR(40), FOREIGN KEY(book_id) REFERENCES books(id))")
